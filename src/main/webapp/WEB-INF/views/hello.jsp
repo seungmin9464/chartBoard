@@ -8,7 +8,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/style.min.css?ver = 1 ">
 </head>
 <body>
   <h1>Hello World!</h1>

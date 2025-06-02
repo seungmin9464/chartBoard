@@ -11,6 +11,7 @@ public class HelloController {
         return "redirect:/login";
     }
     @RequestMapping("/hello")
+//    @RequestMapping("/hello")
     public String home(){
         return"hello";
     }
