@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/style.min.css?ver = 1 ">
+    <link rel="stylesheet" href="<%= request.getContextPath() %>/resources/css/style.min.css">
 </head>
 <body>
   <h1>Hello World!</h1>
