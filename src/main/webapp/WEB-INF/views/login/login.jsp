@@ -17,7 +17,7 @@
     <%@ include file="/WEB-INF/views/include/global.jsp" %>
     <script type="text/script" src="<c:url value='/js/login/script.js'/>"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Login</title>
+    <title>로그인</title>
   </head>
 <body>
   <div class="form_area">
@@ -53,7 +53,7 @@
       <ul class="form_group link_list">
         <li><a href="">비밀번호찾기</a></li>
         <li><a href="">아이디찾기</a></li>
-        <li><a href="">회원가입</a></li>
+        <li><a href="/membership">회원가입</a></li>
       </ul>
       <button type="submit" class="btn">Submit</button>
     </form>
