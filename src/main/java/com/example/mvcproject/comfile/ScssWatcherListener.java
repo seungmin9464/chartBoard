@@ -28,19 +28,19 @@ public class ScssWatcherListener implements ServletContextListener {
         //    보통 순수 Spring MVC 프로젝트에서는
         //    src/main/webapp/resources/scss (또는 /static/scss 등) 형태로 둡니다.
         //    여기서는 /resources/scss 로 가정
-        String scssDir = ctx.getRealPath("/resources/scss");
+        String scssDir = ctx.getRealPath("/resource/static/scss/style.css");
 
         // 2) 컴파일된 CSS를 출력할 폴더 경로 (예: /resources/css)
-        String cssDir  = ctx.getRealPath("/resources/css");
+        String cssDir  = ctx.getRealPath("/resource/static/css/style.css");
 
         // sass 실행 명령어 (시스템에 sass가 설치되어 있어야 합니다)
         // 만약 Windows라면 "sass.bat" 등으로 바꾸고, 경로도 이스케이프 처리 필요
         ProcessBuilder pb = new ProcessBuilder(
                 "sass",
                 "--watch",
-                scssDir + ":" + cssDir
+                scssDir + ":" + cssDir ,
+                "--style=compressed"
         );
-
         // 콘솔에서 sass 워처 로그를 바로 볼 수 있게 설정
         pb.inheritIO();
 
