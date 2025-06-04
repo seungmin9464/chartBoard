@@ -1,0 +1,115 @@
+*{box-sizing: border-box;}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+html,body{
+  width: 100%;
+  background-color: #ebecf0;
+}
+body {
+  line-height: 1;
+  width: 100%;
+  min-height: 100dvh;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="password"]{
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="password"]:focus{
+  outline: none;
+}
+
+/* input 초기화 */
+.chkeck_box_wrap{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.chkeck_box_wrap label{
+  width: 100%;
+  font-size: 16px;;
+}
+
+input[type='checkbox']{
+  display: none;
+}
+/* (체크박스, 텍스트) 정렬 맞추기 */
+.checkbox_label{
+  display: flex;
+  align-items: center;
+}
+
+/* 체크박스 디자인 */
+.checkbox_icon::before{
+  content:'';
+  display: block;
+  margin-right: 5px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid var(--key-color);
+  box-sizing:border-box;
+  position: relative;
+  cursor: pointer;
+}
+
+/* checked */
+.checkbox_label input:checked + .checkbox_icon::before{
+  /*   transition: all 0.15s ease; */
+  background: url(https://intranet.adef.co.kr/asset/images/ic_check.png) #40409b no-repeat center 55%;
+  border:none;
+}
