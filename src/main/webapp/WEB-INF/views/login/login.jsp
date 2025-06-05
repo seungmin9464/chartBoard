@@ -21,20 +21,20 @@
   </head>
 <body>
   <div class="form_area">
-    <form action="">
-      <h1 class="form_title">LOGIN</h1>
+    <form action="/login" method="post">
+      <h1 class="form_title">로그인</h1>
 
       <div class="form_group">
         <div>
           <i class="fa fa-user" aria-hidden="true"></i>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="아이디를 입력해주세요.">
+          <input type="text" class="form-control" name ="id" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="아이디를 입력해주세요.">
         </div>
       </div>
 
       <div class="form_group">
         <div>
           <i class="fa fa-lock" aria-hidden="true"></i>
-          <input type="password" class="form-control" id="exampleInputPassword" placeholder="비밀번호를 입력해주세요.">
+          <input type="password" class="form-control" name="password" id="exampleInputPassword" placeholder="비밀번호를 입력해주세요.">
         </div>
       </div>
 
